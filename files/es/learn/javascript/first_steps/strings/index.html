@@ -170,7 +170,7 @@ var malString = 'Esto es una prueba;
 var malString = Esto es una prueba';</pre>
   Estas líneas no funcionan porque el texto sin comillas alrededor es tomado como nombre de una variable, propiedad, palabra reservada, o algo similar. Si el navegador no las encuentra, entonces se recibe un error( ej. "missing ; before statement"). Si el navegador puede ver dónde comienza una cadena, pero no dónde termine, como se indica en la segunda oración, devuelve error (con "unterminated string literal"). Si tu programa devuelve estos errores, revisa desde el inicio que todas tus cadenas posean sus comillas.</li>
  <li>Lo siguiente funcionará si previamente definiste la variable <code>string</code> — inténtalo:
-  <pre class="brush: js notranslate">var maltring = string;
+  <pre class="brush: js notranslate">var malString = string;
 malString;</pre>
   <code>malString</code> ahora tiene el mismo valor que <code>string</code>.</li>
 </ol>
